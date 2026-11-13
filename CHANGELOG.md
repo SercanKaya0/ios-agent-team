@@ -1,5 +1,8 @@
 # Yenilikler
 
+## 0.12.1 · 2026-11-13
+- iOS Developer doğrudan Architecture'a bağlı; Git Flow, Architecture'ın Senior agent'ı. iOS Developer yine Git Flow'un branch'ini bekler.
+
 ## 0.12.0 · 2026-11-13
 - Git Flow otomatik: TODO'dan sonra İngilizce isim (Claude) + LoodosMCP adı ve kaynağıyla branch'i GitHub'da açar; seçim gerekiyorsa durup sorar.
 - Geliştirme Lead'i "Sr iOS Developer" yerine "Architecture" oldu.
