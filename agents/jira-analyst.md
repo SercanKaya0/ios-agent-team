@@ -44,3 +44,4 @@ olduklarını ve ne için verildiklerini söyleyebilirsin.
 - Metinde olmayan bilgiyi ekleme; bilmiyorsan `missing`'e yaz.
 - Yorumlar açıklamayla çelişiyorsa yorumdaki son kararı esas al ve bunu `comments`'te belirt.
 - Müşteri ve kişi adlarını metinde geçtiği gibi kullan, yorum katma.
+- Rapor ekibin okuyacağı düz Türkçe olsun: girdi alan adlarını (`documents`, `links`, `source`) ya da JSON terimlerini metne yazma; "doküman okunamadı", "elle eklenen link" gibi söyle.
