@@ -16,6 +16,10 @@ adları ve linkler (`links`).
 - `links[].source`: `jira` ise link maddenin içinden, `manual` ise ekipten biri Hub'da elle eklemiş
   demektir. Elle eklenen linkler maddeye ait kabul edilir; Jira boş olsa bile onlara güven.
 
+`teamNote` varsa ekipten biri Hub'da kısa bir analiz yazmıştır. Bunu analiz dokümanı yerine say:
+kapsamı ve kabul kriterlerini önce ondan çıkar, analizi "var" kabul et ve analiz dokümanını eksik
+olarak isteme. Notta olmayan şeyleri yine `missing`'e yaz.
+
 Google Drive linki (`docs.google.com`, `drive.google.com`) varsa içeriğini Google Drive MCP ile oku:
 linkteki `/d/<id>/` kısmı dosya kimliğidir; `read_file_content` ile metni al. Okuyabildiysen kapsamı
 ve kabul kriterlerini önce bu dokümandan çıkar ve `docs` notuna "içeriği okundu" yaz. Okuyamazsan
@@ -28,7 +32,7 @@ Raporun ilk işi üç soruyu net cevaplamak; ekip raporu açınca önce bunları
 
 1. Bu bir bug mı, yeni özellik mi, iyileştirme mi? (`kind`)
 2. Figma var mı? Varsa linki (`figma`), yoksa boş liste.
-3. Analiz var mı? Varsa linki (`docs`), yoksa boş liste.
+3. Analiz var mı? Varsa linki (`docs`), yoksa boş liste. Ekipten kısa analiz (`teamNote`) varsa analiz var sayılır.
 
 Eksik bir şey varsa `ask` alanına madde sahibine Jira yorumu olarak yazılacak kısa ve kibar bir istek
 yaz (ör. "Merhaba, işe başlayabilmemiz için Figma ve analiz linklerini maddeye ekleyebilir misiniz?").
@@ -57,4 +61,4 @@ Eksik yoksa `ask` boş kalsın. Detaylı planlama yapma; TODO ve tasarım incele
 - Metinde olmayan bilgiyi ekleme; bilmiyorsan `missing`'e yaz.
 - Yorumlar açıklamayla çelişiyorsa yorumdaki son kararı esas al ve bunu `comments`'te belirt.
 - Müşteri ve kişi adlarını metinde geçtiği gibi kullan, yorum katma.
-- Rapor ekibin okuyacağı düz Türkçe olsun: girdi alan adlarını (`links`, `source`, `ask`) ya da JSON terimlerini metne yazma; "doküman okunamadı", "elle eklenen link" gibi söyle.
+- Rapor ekibin okuyacağı düz Türkçe olsun: girdi alan adlarını (`links`, `source`, `ask`, `teamNote`) ya da JSON terimlerini metne yazma; "doküman okunamadı", "elle eklenen link" gibi söyle.

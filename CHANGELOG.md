@@ -1,5 +1,8 @@
 # Yenilikler
 
+## 0.5.0 · 2026-11-13
+- Link yerine Hub'da yazılan kısa analiz: Jira Analyst bunu analiz dokümanı yerine okur, analizi "var" sayar.
+
 ## 0.4.0 · 2026-11-13
 - Jira Analyst önce üç soruyu cevaplar: bug mı özellik mi, Figma var mı, analiz var mı.
 - Eksik varsa madde sahibine yazılacak hazır yorumu çıkarır (`ask`).
