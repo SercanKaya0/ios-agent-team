@@ -1,5 +1,12 @@
 # Yenilikler
 
+## 0.7.0 · 2026-11-13
+- Todo Analyst artık plan yapmıyor: analizdeki, seçilen platformu ilgilendiren her cümleyi yorum katmadan bir maddeye çeviriyor.
+- Maddeler analizin bölüm başlıklarıyla gruplanır; ekran metinleri birebir, analiz referanslarıyla.
+- Çelişkiler / açık sorular (Ç), varsayımlar (V) ve analizde olmayan ekler (B) ayrı bölümlerde; etkilenen maddeler çelişkiye bağlanır.
+- Platform Hub'da seçilir (varsayılan iOS); diğer platformların maddeleri alınmaz.
+- Skill: Analizden TODO (eski TODO çıkarma ve iOS iş ayırma kalktı).
+
 ## 0.6.0 · 2026-11-13
 - Takım aşamalara ayrıldı: Sr Business Analyst (Analiz) ve Sr iOS Developer (Geliştirme). iOS Lead kalktı.
 - Todo Analyst eklendi: Jira Analyst'in raporunu devralıp iOS için TODO planı çıkarır (işler, kabul kriterleri, büyüklük, bağımlılıklar, açık sorular, devir notu).

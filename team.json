@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -42,15 +42,14 @@
       "kind": "agent",
       "lead": "business-analyst",
       "title": "Todo Analyst",
-      "role": "Sr · Planlama",
+      "role": "Sr · TODO",
       "hue": 28,
       "face": 3,
       "tools": [
         "drive"
       ],
       "skills": [
-        "todo-breakdown",
-        "ios-task-split"
+        "analysis-to-todo"
       ],
       "after": "jira-analyst",
       "autoWhen": "ready",
