@@ -32,7 +32,7 @@ CHANGELOG.md              Sürüm notları (Hub'da güncelleme bildiriminde gör
 - `members` sırası çalışma sırasıdır: bir Lead'in agent'ları listede göründükleri sırayla çalışır.
 - `kind`: `lead` ya da `agent`. Agent'ın `lead`'i bağlı olduğu Lead'in `id`'si.
 - `hue` (0–359) kartın rengi, `face` (0–7) Hub'daki resmi.
-- `tools`: `figma`, `jira`, `loodos-mcp`, `xcode` (MCP'ler) · `read`, `write`, `bash`, `web` (yerleşik).
+- `tools`: `figma`, `jira`, `drive` (Google Drive), `loodos-mcp`, `xcode` (MCP'ler); agent sadece adı geçen MCP'lerin okuma araçlarını kullanabilir · `read`, `write`, `bash`, `web` (yerleşik).
 - `runsOn: "task"`: Hub'da göreve bir Jira maddesi eklenince bu agent kendiliğinden çalışır.
 - `output`: Agent'ın rapor biçimi; Hub bu biçimi tanır ve raporu kart olarak gösterir (şimdilik `jira-analysis`).
 - Agent dosyasında `model:` (ör. `sonnet`) agent'ın hangi modelle çalışacağını söyler.

@@ -1,5 +1,10 @@
 # Yenilikler
 
+## 0.4.0 · 2026-11-13
+- Jira Analyst önce üç soruyu cevaplar: bug mı özellik mi, Figma var mı, analiz var mı.
+- Eksik varsa madde sahibine yazılacak hazır yorumu çıkarır (`ask`).
+- Analiz dokümanlarını Google Drive MCP ile kendisi okur; Hub'ın ayrı Drive bağlantısı kalktı.
+
 ## 0.3.0 · 2026-11-13
 - Jira Analyst, Hub'da elle eklenen analiz ve Figma linklerini maddenin parçası sayar.
 - Google Drive bağlıysa analiz dokümanlarının içeriğini okuyup kapsamı ve kabul kriterlerini oradan çıkarır.
