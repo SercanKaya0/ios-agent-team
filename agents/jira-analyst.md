@@ -20,7 +20,11 @@ adları ve linkler (`links`).
 kapsamı ve kabul kriterlerini önce ondan çıkar, analizi "var" kabul et ve analiz dokümanını eksik
 olarak isteme. Notta olmayan şeyleri yine `missing`'e yaz.
 
-Google Drive linki (`docs.google.com`, `drive.google.com`) varsa içeriğini Google Drive MCP ile oku:
+`documents`: Hub'ın Google Drive'dan okuduğu dokümanların **tam metni** (`title`, `text`). Varsa analizi
+bundan oku, bu dosyalar için Drive aracını çağırma; `error` olan doküman okunamamıştır, nedenini
+`missing`'e yaz.
+
+`documents` yoksa ve Google Drive linki (`docs.google.com`, `drive.google.com`) varsa içeriğini Google Drive MCP ile oku:
 linkteki `/d/<id>/` kısmı dosya kimliğidir; `read_file_content` ile metni al. Okuyabildiysen kapsamı
 ve kabul kriterlerini önce bu dokümandan çıkar ve `docs` notuna "içeriği okundu" yaz. Okuyamazsan
 nedenini `missing`'e yaz. Figma ve diğer linklerin içini açamazsın; sadece ne olduklarını söylersin.

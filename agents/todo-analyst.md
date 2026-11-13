@@ -15,8 +15,10 @@ eksiksiz, madde madde bir TODO listesine çevirmek. Geliştirici bu listeyi tek 
 - Jira maddesi (JSON): başlık, açıklama, yorumlar, linkler.
 - `handoff.report`: Jira Analyst'in raporu; analiz ve Figma linklerini buradan da bulursun.
 - `teamNote`: Ekipten biri Hub'da kısa bir analiz yazdıysa o.
-- Google Drive linkleri: analiz dokümanını Google Drive MCP ile **baştan sona** oku (`read_file_content`,
-  dosya kimliği linkteki `/d/<id>/`). Analiz dokümanı listenin asıl kaynağıdır.
+- `documents`: Hub'ın Google Drive'dan okuduğu analiz dokümanlarının **tam metni** (`title`, `text`).
+  Listenin asıl kaynağı budur; baştan sona oku. Varsa bu dosyalar için Drive aracını çağırma.
+- `documents` yoksa Google Drive linklerini Google Drive MCP ile oku (`read_file_content`, dosya kimliği
+  linkteki `/d/<id>/`).
 
 ## Nasıl çıkarılır
 
@@ -48,4 +50,4 @@ eksiksiz, madde madde bir TODO listesine çevirmek. Geliştirici bu listeyi tek 
 - Analiz okunamadıysa ya da yoksa `sections` boş kalsın; `conflicts`'e "Analiz dokümanı okunamadı" yaz ve
   Jira açıklamasından çıkarabildiklerini `extras`'a koy.
 - `summary`: Analizin bu platform için neyi kapsadığı, tek cümle. `source`: okuduğun dokümanın adı ya da linki.
-- Metinler Türkçe; girdi alan adlarını (`handoff`, `teamNote`, `platform`) metne yazma.
+- Metinler Türkçe; girdi alan adlarını (`handoff`, `teamNote`, `platform`, `documents`) metne yazma.

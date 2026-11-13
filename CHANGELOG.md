@@ -1,5 +1,8 @@
 # Yenilikler
 
+## 0.8.0 · 2026-11-13
+- Drive Hub'dan bağlıysa Hub analiz dokümanlarının tam metnini okuyup agent'lara verir; uzun analizler kesilmeden okunur.
+
 ## 0.7.0 · 2026-11-13
 - Todo Analyst artık plan yapmıyor: analizdeki, seçilen platformu ilgilendiren her cümleyi yorum katmadan bir maddeye çeviriyor.
 - Maddeler analizin bölüm başlıklarıyla gruplanır; ekran metinleri birebir, analiz referanslarıyla.
