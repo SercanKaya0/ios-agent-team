@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -84,6 +84,26 @@
         "loodos-mcp"
       ],
       "skills": []
+    },
+    {
+      "id": "ios-coder",
+      "kind": "agent",
+      "lead": "ios-developer",
+      "title": "iOS Developer",
+      "role": "Sr · Kodlama",
+      "hue": 215,
+      "face": 4,
+      "tools": [
+        "read",
+        "write",
+        "bash",
+        "xcode"
+      ],
+      "skills": [
+        "ios-implementation"
+      ],
+      "after": "jira-publisher",
+      "output": "code-change"
     }
   ]
 }

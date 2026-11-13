@@ -1,5 +1,11 @@
 # Yenilikler
 
+## 0.10.0 · 2026-11-13
+- Geliştirme aşaması başladı: Sr iOS Developer altında iOS Developer agent'ı.
+- Bir TODO bölümünü projenin kalıplarına uyarak, görev için açılan ayrı çalışma kopyasında ve branch'te kodlar, derler; bitirdiği maddeleri raporlar. Commit ve push yapmaz.
+- Çelişkisi çözülmemiş bölümler geliştirmeye alınmaz. Aynı bölüm Terminal'de Claude Code ile de açılabilir.
+- Skill: iOS uygulama.
+
 ## 0.9.0 · 2026-11-13
 - Jira Publisher eklendi (analiz aşamasının son adımı): Jira Analyst raporu maddeye yorum, TODO listesi bölüm başına alt görev ve Jira'da işaretlenebilir liste olarak gider.
 - Tikler yalnız Jira'da atılır; Hub ilerlemeyi Jira'dan okur. Çözülen çelişkiler bağlı ⚠ işaretlerini söndürür.
