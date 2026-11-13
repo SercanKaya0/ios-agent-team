@@ -1,6 +1,41 @@
 {
   "name": "iOS Team",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
-  "members": []
+  "members": [
+    {
+      "id": "ios-lead",
+      "kind": "lead",
+      "title": "iOS Lead",
+      "role": "Lead · iOS",
+      "hue": 262,
+      "face": 0,
+      "tools": [
+        "read",
+        "jira"
+      ],
+      "skills": []
+    },
+    {
+      "id": "jira-analyst",
+      "kind": "agent",
+      "lead": "ios-lead",
+      "title": "Jira Analyst",
+      "role": "Sr · Analiz",
+      "hue": 216,
+      "face": 2,
+      "tools": [
+        "jira",
+        "read"
+      ],
+      "skills": [
+        "jira-reading",
+        "link-finder",
+        "bug-triage",
+        "readiness-check"
+      ],
+      "runsOn": "task",
+      "output": "jira-analysis"
+    }
+  ]
 }
