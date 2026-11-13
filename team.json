@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.12.1",
+  "version": "0.13.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -71,26 +71,10 @@
       "skills": []
     },
     {
-      "id": "git-flow",
-      "kind": "agent",
-      "lead": "ios-developer",
-      "title": "Git Flow",
-      "role": "Senior Agent · Branch",
-      "hue": 160,
-      "face": 7,
-      "tools": [
-        "loodos-mcp"
-      ],
-      "skills": [],
-      "after": "todo-analyst",
-      "output": "branch",
-      "autoWhen": "always"
-    },
-    {
       "id": "ios-coder",
       "kind": "agent",
       "lead": "ios-developer",
-      "title": "iOS Developer",
+      "title": "Sr. iOS Developer",
       "role": "Sr · Kodlama",
       "hue": 215,
       "face": 4,
@@ -105,6 +89,22 @@
       ],
       "after": "ios-developer",
       "output": "code-change"
+    },
+    {
+      "id": "git-flow",
+      "kind": "agent",
+      "lead": "ios-developer",
+      "title": "Git Flow",
+      "role": "Agent · Branch (otomatik)",
+      "hue": 160,
+      "face": 7,
+      "tools": [
+        "loodos-mcp"
+      ],
+      "skills": [],
+      "after": "ios-coder",
+      "output": "branch",
+      "autoWhen": "always"
     },
     {
       "id": "jira-publisher",

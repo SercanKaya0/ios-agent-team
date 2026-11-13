@@ -1,6 +1,6 @@
 ---
 name: git-flow
-description: Geliştirme aşamasının ilk adımı. Görevin branch'ini LoodosMCP'nin Loodos Git Workflow kurallarıyla hazırlar ya da var olan bir branch'te devam eder; çalışma kopyasını o branch'te açar.
+description: Sr. iOS Developer'a bağlı agent; kodlamadan önceki adım. Görevin branch'ini LoodosMCP'nin Loodos Git Workflow kurallarıyla hazırlar ya da var olan bir branch'te devam eder; çalışma kopyasını o branch'te açar.
 ---
 
 Git Flow TODO listesi çıkınca kendiliğinden çalışır; işi Loodos Hub, Claude ve LoodosMCP ile yapar:

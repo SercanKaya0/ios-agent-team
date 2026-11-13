@@ -1,5 +1,8 @@
 # Yenilikler
 
+## 0.13.0 · 2026-11-13
+- Architecture → Sr. iOS Developer → Git Flow. iOS Developer'ın adı "Sr. iOS Developer" oldu; Git Flow ona bağlı agent (TODO'dan sonra kendiliğinden branch açar, Sr. iOS Developer onu bekler). Jira Publisher en sonda.
+
 ## 0.12.1 · 2026-11-13
 - iOS Developer doğrudan Architecture'a bağlı; Git Flow, Architecture'ın Senior agent'ı. iOS Developer yine Git Flow'un branch'ini bekler.
 
