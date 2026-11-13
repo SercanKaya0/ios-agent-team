@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -58,8 +58,8 @@
     {
       "id": "ios-developer",
       "kind": "lead",
-      "title": "Sr iOS Developer",
-      "role": "Lead · Geliştirme",
+      "title": "Architecture",
+      "role": "Lead · Mimari",
       "hue": 262,
       "face": 4,
       "tools": [
@@ -75,7 +75,7 @@
       "kind": "agent",
       "lead": "ios-developer",
       "title": "Git Flow",
-      "role": "Sr · Branch",
+      "role": "Branch · otomatik",
       "hue": 160,
       "face": 7,
       "tools": [
@@ -83,7 +83,8 @@
       ],
       "skills": [],
       "after": "todo-analyst",
-      "output": "branch"
+      "output": "branch",
+      "autoWhen": "always"
     },
     {
       "id": "ios-coder",

@@ -1,5 +1,9 @@
 # Yenilikler
 
+## 0.12.0 · 2026-11-13
+- Git Flow otomatik: TODO'dan sonra İngilizce isim (Claude) + LoodosMCP adı ve kaynağıyla branch'i GitHub'da açar; seçim gerekiyorsa durup sorar.
+- Geliştirme Lead'i "Sr iOS Developer" yerine "Architecture" oldu.
+
 ## 0.11.0 · 2026-11-13
 - Git Flow eklendi (geliştirmenin ilk adımı): branch LoodosMCP kurallarıyla hazırlanır; tür, isim ve kaynak seçenekleri LoodosMCP'den gelir, onayla GitHub'da açılır. Var olan branch'te devam da seçilebilir.
 - iOS Developer, Git Flow'un branch'inde çalışır.
