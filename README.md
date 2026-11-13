@@ -33,8 +33,11 @@ CHANGELOG.md              Sürüm notları (Hub'da güncelleme bildiriminde gör
 - `kind`: `lead` ya da `agent`. Agent'ın `lead`'i bağlı olduğu Lead'in `id`'si.
 - `hue` (0–359) kartın rengi, `face` (0–7) Hub'daki resmi.
 - `tools`: `figma`, `jira`, `drive` (Google Drive), `loodos-mcp`, `xcode` (MCP'ler); agent sadece adı geçen MCP'lerin okuma araçlarını kullanabilir · `read`, `write`, `bash`, `web` (yerleşik).
-- `runsOn: "task"`: Hub'da göreve bir Jira maddesi eklenince bu agent kendiliğinden çalışır.
-- `output`: Agent'ın rapor biçimi; Hub bu biçimi tanır ve raporu kart olarak gösterir (şimdilik `jira-analysis`).
+- Lead'ler aşamadır (Analiz → Geliştirme); görev Lead sırasıyla ilerler.
+- `after: "<agent id>"`: Bu agent o agent'ın raporunu devralır ve ondan sonra çalışır.
+- `autoWhen: "ready"`: Önceki rapor "Başlanabilir" ise kendiliğinden başlar; değilse Hub'da onay bekler (`always` ise her zaman).
+- `runsOn: "task": Hub'da göreve bir Jira maddesi eklenince bu agent kendiliğinden çalışır.
+- `output`: Agent'ın rapor biçimi; Hub bu biçimi tanır ve raporu kart olarak gösterir (`jira-analysis`, `todo-plan`).
 - Agent dosyasında `model:` (ör. `sonnet`) agent'ın hangi modelle çalışacağını söyler.
 - Takımda bir şey değişince `version`'ı artır ve `CHANGELOG.md`'ye yaz; Hub yeni sürümü kurar.
 

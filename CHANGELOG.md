@@ -1,5 +1,11 @@
 # Yenilikler
 
+## 0.6.0 · 2026-11-13
+- Takım aşamalara ayrıldı: Sr Business Analyst (Analiz) ve Sr iOS Developer (Geliştirme). iOS Lead kalktı.
+- Todo Analyst eklendi: Jira Analyst'in raporunu devralıp iOS için TODO planı çıkarır (işler, kabul kriterleri, büyüklük, bağımlılıklar, açık sorular, devir notu).
+- Devir: Jira Analyst "Başlanabilir" derse Todo Analyst kendiliğinden başlar; eksik varsa ekipten onay bekler.
+- Skill'ler: TODO çıkarma, iOS iş ayırma.
+
 ## 0.5.0 · 2026-11-13
 - Link yerine Hub'da yazılan kısa analiz: Jira Analyst bunu analiz dokümanı yerine okur, analizi "var" sayar.
 

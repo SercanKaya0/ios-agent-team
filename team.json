@@ -1,25 +1,25 @@
 {
   "name": "iOS Team",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
-      "id": "ios-lead",
+      "id": "business-analyst",
       "kind": "lead",
-      "title": "iOS Lead",
-      "role": "Lead · iOS",
-      "hue": 262,
-      "face": 0,
+      "title": "Sr Business Analyst",
+      "role": "Lead · Analiz",
+      "hue": 160,
+      "face": 1,
       "tools": [
-        "read",
-        "jira"
+        "jira",
+        "drive"
       ],
       "skills": []
     },
     {
       "id": "jira-analyst",
       "kind": "agent",
-      "lead": "ios-lead",
+      "lead": "business-analyst",
       "title": "Jira Analyst",
       "role": "Sr · Analiz",
       "hue": 216,
@@ -36,6 +36,40 @@
       ],
       "runsOn": "task",
       "output": "jira-analysis"
+    },
+    {
+      "id": "todo-analyst",
+      "kind": "agent",
+      "lead": "business-analyst",
+      "title": "Todo Analyst",
+      "role": "Sr · Planlama",
+      "hue": 28,
+      "face": 3,
+      "tools": [
+        "drive"
+      ],
+      "skills": [
+        "todo-breakdown",
+        "ios-task-split"
+      ],
+      "after": "jira-analyst",
+      "autoWhen": "ready",
+      "output": "todo-plan"
+    },
+    {
+      "id": "ios-developer",
+      "kind": "lead",
+      "title": "Sr iOS Developer",
+      "role": "Lead · Geliştirme",
+      "hue": 262,
+      "face": 4,
+      "tools": [
+        "read",
+        "write",
+        "xcode",
+        "loodos-mcp"
+      ],
+      "skills": []
     }
   ]
 }
