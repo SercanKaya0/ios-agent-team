@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.10.0",
+  "version": "0.11.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -56,21 +56,6 @@
       "output": "todo-plan"
     },
     {
-      "id": "jira-publisher",
-      "kind": "agent",
-      "lead": "business-analyst",
-      "title": "Jira Publisher",
-      "role": "Sr · Jira",
-      "hue": 200,
-      "face": 6,
-      "tools": [
-        "jira"
-      ],
-      "skills": [],
-      "after": "todo-analyst",
-      "output": "jira-publish"
-    },
-    {
       "id": "ios-developer",
       "kind": "lead",
       "title": "Sr iOS Developer",
@@ -84,6 +69,21 @@
         "loodos-mcp"
       ],
       "skills": []
+    },
+    {
+      "id": "git-flow",
+      "kind": "agent",
+      "lead": "ios-developer",
+      "title": "Git Flow",
+      "role": "Sr · Branch",
+      "hue": 160,
+      "face": 7,
+      "tools": [
+        "loodos-mcp"
+      ],
+      "skills": [],
+      "after": "todo-analyst",
+      "output": "branch"
     },
     {
       "id": "ios-coder",
@@ -102,8 +102,23 @@
       "skills": [
         "ios-implementation"
       ],
-      "after": "jira-publisher",
+      "after": "git-flow",
       "output": "code-change"
+    },
+    {
+      "id": "jira-publisher",
+      "kind": "agent",
+      "lead": "ios-developer",
+      "title": "Jira Publisher",
+      "role": "Sr · Jira",
+      "hue": 200,
+      "face": 6,
+      "tools": [
+        "jira"
+      ],
+      "skills": [],
+      "after": "ios-coder",
+      "output": "jira-publish"
     }
   ]
 }

@@ -1,5 +1,11 @@
 # Yenilikler
 
+## 0.11.0 · 2026-11-13
+- Git Flow eklendi (geliştirmenin ilk adımı): branch LoodosMCP kurallarıyla hazırlanır; tür, isim ve kaynak seçenekleri LoodosMCP'den gelir, onayla GitHub'da açılır. Var olan branch'te devam da seçilebilir.
+- iOS Developer, Git Flow'un branch'inde çalışır.
+- Jira Publisher en sona alındı: rapor, TODO, biten maddeler ve çelişki cevapları birlikte Jira'ya gider.
+- Çelişkiler Hub'da cevaplanır; cevaplanan çelişkiye bağlı bölümlerin kilidi açılır, cevaplar kodlama yönergesine girer.
+
 ## 0.10.0 · 2026-11-13
 - Geliştirme aşaması başladı: Sr iOS Developer altında iOS Developer agent'ı.
 - Bir TODO bölümünü projenin kalıplarına uyarak, görev için açılan ayrı çalışma kopyasında ve branch'te kodlar, derler; bitirdiği maddeleri raporlar. Commit ve push yapmaz.
