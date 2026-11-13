@@ -37,7 +37,7 @@ CHANGELOG.md              Sürüm notları (Hub'da güncelleme bildiriminde gör
 - `after: "<agent id>"`: Bu agent o agent'ın raporunu devralır ve ondan sonra çalışır.
 - `autoWhen: "ready"`: Önceki rapor "Başlanabilir" ise kendiliğinden başlar; değilse Hub'da onay bekler (`always` ise her zaman).
 - `runsOn: "task": Hub'da göreve bir Jira maddesi eklenince bu agent kendiliğinden çalışır.
-- `output`: Agent'ın rapor biçimi; Hub bu biçimi tanır ve raporu kart olarak gösterir (`jira-analysis`, `todo-plan`).
+- `output`: Agent'ın rapor biçimi; Hub bu biçimi tanır ve raporu kart olarak gösterir (`jira-analysis`, `todo-plan`, `jira-publish`: Hub'ın Jira'ya yazdığı adım).
 - Agent dosyasında `model:` (ör. `sonnet`) agent'ın hangi modelle çalışacağını söyler.
 - Takımda bir şey değişince `version`'ı artır ve `CHANGELOG.md`'ye yaz; Hub yeni sürümü kurar.
 

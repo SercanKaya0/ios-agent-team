@@ -1,5 +1,10 @@
 # Yenilikler
 
+## 0.9.0 · 2026-11-13
+- Jira Publisher eklendi (analiz aşamasının son adımı): Jira Analyst raporu maddeye yorum, TODO listesi bölüm başına alt görev ve Jira'da işaretlenebilir liste olarak gider.
+- Tikler yalnız Jira'da atılır; Hub ilerlemeyi Jira'dan okur. Çözülen çelişkiler bağlı ⚠ işaretlerini söndürür.
+- Müşteri Jira'sına yazdığı için her gönderim önizleme ve onayla yapılır.
+
 ## 0.8.0 · 2026-11-13
 - Drive Hub'dan bağlıysa Hub analiz dokümanlarının tam metnini okuyup agent'lara verir; uzun analizler kesilmeden okunur.
 

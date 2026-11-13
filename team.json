@@ -1,6 +1,6 @@
 {
   "name": "iOS Team",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "summary": "Loodos iOS ekibinin Claude agent takımı.",
   "members": [
     {
@@ -54,6 +54,21 @@
       "after": "jira-analyst",
       "autoWhen": "ready",
       "output": "todo-plan"
+    },
+    {
+      "id": "jira-publisher",
+      "kind": "agent",
+      "lead": "business-analyst",
+      "title": "Jira Publisher",
+      "role": "Sr · Jira",
+      "hue": 200,
+      "face": 6,
+      "tools": [
+        "jira"
+      ],
+      "skills": [],
+      "after": "todo-analyst",
+      "output": "jira-publish"
     },
     {
       "id": "ios-developer",
